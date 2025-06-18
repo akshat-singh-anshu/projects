@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat- developer portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    *{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+}
+nav ul li{
+    list-style:none;
+    margin:0 23px;
+}
+.left{
+    font-size:1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content:space-around;
+    margin:80px 0;
+    align-items: center;
+}
+.firstSection > div{
+    width:30%;
+
+}
+.leftSection{
+    font-size:3rem;
+
+}
+.rightSection img{
+    width:80%;
+    border-radius: 50%;
+
+}
+.purple{
+    color:rgb(188, 77, 188);
+}
+nav ul a{
+    text-decoration: none;
+    color:white;
+}
+nav ul a:hover{
+    color: rgb(153, 153, 226);
+}
+#element{
+    color:rgb(188, 77, 188); ;
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height:80vh;
+}
+
+.secondSection h1{
+    font-size: 1.9rem;
+}
+.text-grey{
+    color:grey;
+}
+.secondSection .box{
+    background:white;
+    width:80vw;
+    height:2px;
+    margin:56px 0;
+}
+/* Styles for screens between 600px and 900px */
+    /* ... existing styles ... */
+
+    /* Media queries for mobile responsiveness */
+    @media screen and (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            height: auto;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        .firstSection {
+            flex-direction: column;
+            margin: 40px 0;
+        }
+
+        .firstSection > div {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .rightSection img {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .secondSection {
+            max-width: 90vw;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondSection .box {
+            width: 90vw;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Akshat portfolio</div>
+            <div class="right">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>about</li></a>
+                    <a href="https://www.linkedin.com/in/akshat-singh-76183725a/details/certifications/"><li>Certifications</li></a>
+                    <a href="#"><li>project</li></a>
+                    <a href="https://www.linkedin.com/in/akshat-singh-76183725a/overlay/contact-info/"><li>contact me</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hii , My Name Is <span class="purple">Akshat</span>
+                <div> And I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="Screenshot 2024-08-08 163154.png" alt="">
+            </div>
+        </section>
+        <section class="secondSection">
+            <span class="text-grey">What I Have Done So Far</span>
+            <h1>Work Experience<br>
+                <h3><li>Fresher</li></h3>
+                <h3><li>Intern</li></h3>
+                <h1>Education<br>
+                    <h3>MCA
+                        <BR>
+                            <span class="text-grey">NEHRU GRAM BHARTI UNIVERSITY</span>
+    
+                    </h3>
+                </h1>
+            </h1>
+            <h3>Skills</h3><br>
+            <span CLASS="text-grey">HTML , CSS , JAVASCRIPT , BOOTSTRAP , TAILWIND CSS , REACTJS , NODEJS , EXPRESSJS , MONGODB</span>
+            <div class="box">
+                
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Graphics Designer', 'Software Engineer'],
+          typeSpeed: 50,
+        });
+      </script>
+
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
